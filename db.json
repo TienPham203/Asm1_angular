@@ -1,22 +1,16 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Dự án A update",
-      "price": 10,
-      "image": "https://image.imgcreator.ai/ImgCreator/231fecce758d42948e93c6a605bbedfc/512/3cd4557a-6a3e-11ed-8e23-0242ac110002_1/ImgCreator.ai%20a%20rabbit%20as%20the%20ultimate%20super%20hero.webp"
-    },
-    {
-      "id": 2,
-      "name": "Dự án B",
-      "price": 20,
-      "image": "https://image.imgcreator.ai/ImgCreator/231fecce758d42948e93c6a605bbedfc/512/3cd4557a-6a3e-11ed-8e23-0242ac110002_1/ImgCreator.ai%20a%20rabbit%20as%20the%20ultimate%20super%20hero.webp"
-    },
-    {
-      "name": "Dự án 3",
-      "price": "30",
+      "name": "Dự án 6",
+      "price": "6",
       "image": "https://images.hdqwalls.com/wallpapers/thumb/john-wick-x-skull-5k-cb.jpg",
-      "id": 3
+      "id": 2
+    },
+    {
+      "name": "Dự án 1",
+      "price": "10",
+      "image": "https://images.hdqwalls.com/wallpapers/thumb/john-wick-x-skull-5k-cb.jpg",
+      "id": 4
     }
   ]
 }

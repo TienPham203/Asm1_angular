@@ -1,0 +1,18 @@
+<div class="container">
+    <form class="mb-3" (submit)="onHandleUpdate()">
+        <div class="">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="product.name" name="name">
+        </div>
+        <div class="">
+            <label class="form-label">Price</label>
+            <input type="text" class="form-control" [(ngModel)]="product.price" name="price">
+        </div>
+        <div class="">
+            <label class="form-label">Image</label>
+            <input type="text" class="form-control" [(ngModel)]="product.image" name="image">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Sửa</button>
+    </form>
+</div>

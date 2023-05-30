@@ -9,18 +9,19 @@
                 <th>Action</th>
             </tr>
         </thead>
-        <tbody *ngIf="product && product.length">
+        <tbody *ngIf="product &&product.length">
             <tr *ngFor="let product of product,index as i">
-                <td>{{i +1}}</td>
+                <td>{{i+1}}</td>
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
                 <td><img style="width:200px" src={{product.image}} alt=""></td>
-                <td>
-                    <button class="btn btn-danger" (click)="removeItem(product.id)">Xóa</button>
-                    <button class="btn btn-primary"><a class="text-light"
-                            [routerLink]="['/admin/product',product.id,'edit']">Sửa</a></button>
+                <td><button class="btn btn-danger" (click)="removeItem(product.id)">Xóa</button>
+                    <button class="btn btn-primary"><a class="text-light text-decoration-none"
+                            [routerLink]="['/product',product.id,'edit']">Sửa</a></button>
                 </td>
             </tr>
         </tbody>
     </table>
+    <div><button class="btn btn-primary"><a class="text-light text-decoration-none"
+                routerLink="/product/add">Thêm</a></button></div>
 </div>

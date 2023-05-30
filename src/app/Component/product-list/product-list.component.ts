@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IProduct } from 'src/app/interface/product';
-import { ProductService } from 'src/app/services/product.service';
+import { IProject } from 'src/app/Interface/project';
+import { ProjectService } from 'src/app/Service/project.service';
 
 @Component({
   selector: 'app-product-list',
@@ -8,15 +8,18 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent {
-  product: IProduct[] = []
-  constructor(private productService: ProductService) {
-    this.productService.getProduct().subscribe(product => {
+  product: IProject[] = []
+  constructor(private projectService: ProjectService) {
+    this.projectService.getProject().subscribe(product => {
       this.product = product
     })
   }
+
   removeItem(id: any) {
-    this.productService.deleteProduct(id).subscribe(data => {
+    this.projectService.deleteProject(id).subscribe(item => {
       this.product = this.product.filter(item => item.id != id)
+      alert("Xóa thành công")
     })
   }
+
 }
